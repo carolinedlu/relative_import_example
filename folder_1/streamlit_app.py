@@ -8,7 +8,8 @@ st.write("Current folder:")
 st.write(p)
 parent = p.resolve().parent.resolve() #parent folder 
 libfolder = parent / "scmopt"  
-sys.path.append(str(libfolder)) # add both paths 
-sys.path.append(str(parent))
+new_path = sys.path.append(str(libfolder)) # add both paths 
+new_path_1 = sys.path.append(str(parent))
+st.write(new_path_1)
 st.write(parent)
 st.write(libfolder)
